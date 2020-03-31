@@ -5,10 +5,11 @@ date:   2020-03-29 11:55:35 -0700
 categories: software license cc
 ---
 
-During a recent coding lab, licensing came up in conversation. As a Flatiron student, we use a lot of starter code provided by Flatiron itself, as well many other tools provided by a variety of companies and communities. One project prompted us to make sure we included a license before submitting, but what license is appropriate? 
+During a recent coding lab, licensing came up in conversation. As a Flatiron student, we use a lot of starter code provided by Flatiron itself, as well many other tools provided by a variety of companies and communities. One project prompted us to make sure we included a license before submitting, but what license is appropriate?
 
 
 ## Licensing
+
 * Code is considered a creative work, and therefore falls under the same kind of legal provisions governing other forms of art and media.
 * All computer code is governed by some kind of software license. Even a [lack of a license](https://en.wikipedia.org/wiki/Public_domain) is considered grounds for determining how a piece of software can be used, shared, and modified.
 * The main dividing line with software is between 'closed source' and 'open source' software. Closed source code remains proprietary and hidden from the general public, while open source code is freely available to be viewed and used.
@@ -30,7 +31,7 @@ Flatiron includes the [following license](https://learn.co/content-license) with
 
 ### The Flatiron Educational Content License
 
-The core of Flatiron's license is the following Creative Common clauses: BY, NC, and SA. If I use or publish any Flatiron School code, I'll need to properly attribute it as coming from Flatiron. I also cannot use it for any commercial purposes, and furthermore I cannot attempt to license it more restrictively. I am able to share it and alter or build on it, as long as I follow these restrictions. 
+The core of Flatiron's license is the following Creative Common clauses: BY, NC, and SA. If I use or publish any Flatiron School code, I'll need to properly attribute it as coming from Flatiron. I also cannot use it for any commercial purposes, and furthermore I cannot attempt to license it more restrictively. I am able to share it and alter or build on it, as long as I follow these restrictions.
 
 ### Why does licensing matter?
 
