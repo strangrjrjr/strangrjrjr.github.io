@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Hello and welcome to Ruby!"
 date:   2020-03-15 13:25:51 -0700
 categories: ruby methods software

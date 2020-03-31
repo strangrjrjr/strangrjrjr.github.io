@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Licensing Primer"
 date:   2020-03-29 11:55:35 -0700
 categories: software license cc

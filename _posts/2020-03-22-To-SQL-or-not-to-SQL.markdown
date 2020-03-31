@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "To SQL or not to SQL"
 date:   2020-03-22 10:20:12 -0700
 categories: sql database nosql
