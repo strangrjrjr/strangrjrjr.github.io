@@ -21,7 +21,7 @@
 title: Strangrjrjr Thoughts
 author: Roger Robertson Jr
 email: rjrjr@pm.me
-blurb: Be nice, and wash your hands.
+blurb: An inefficient means of turning coffee into code.
 description: >- # this means to ignore newlines until "baseurl:"
   This site is a small experiment/side project for me. I'm exploring Jekyll, GitHub Pages, Ruby, JavaScript, and whatever else catches my fancy. Enjoy!
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -33,6 +33,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jemoji
+  -jekyll-seo-tag
 header_pages:
   - index.markdown
   - about.markdown
