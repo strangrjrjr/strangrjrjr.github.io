@@ -33,7 +33,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jemoji
-  -jekyll-seo-tag
+  - jekyll-seo-tag
 header_pages:
   - index.markdown
   - about.markdown
