@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "What is Electron? or: Am I an app developer?"
-date:   2020-04-29 15:02:17 -0700
+date:   2020-05-12 19:35:12 -0700
 categories: electron framework development
 ---
 
