@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "A Series of Tubes, Part 1: Communication Protocols"
-date:   2020-05-12 19:35:12 -0700
+date:   2020-06-13 13:20:02 -0700
 categories: actioncable websockets project
 ---
 
