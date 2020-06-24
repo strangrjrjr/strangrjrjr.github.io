@@ -33,7 +33,7 @@ This method expects params from the consumer that will include a conversation id
 
 `unsubscribed` simply manages what to do when a consumer disconnects from the channel. I chose to utilize another built in method `stop_all_streams` to close the channel on the server side and not broadcast needlessly. 
 
-We need a third method, however, to complete our `MessagesChannel` implementation: `received`
+We need a third method, however, to complete our `MessagesChannel` implementation: `receive`
 
 ## Receive
 
