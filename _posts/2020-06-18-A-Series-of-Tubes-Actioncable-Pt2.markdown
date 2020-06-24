@@ -18,7 +18,7 @@ Generators are so powerful because they can be customized to only create the res
 
 ## Channels
 
-Now that we have the basics of generators down, we can dive into ActionCable. ActionCable is a WebSocket implementation that was integrated into Rails 5. ActionCable works by establishing a WebSocket connection with clients (called consumers), and then clients subscribe to channels to receive content. My app requires 2 connections at the moment, one for new conversations and one for messages within a given conversation. We can fire up our generator by running `rails g channel message && rails g channel conversation` and delve into the structure from there.
+Now that we have the basics of generators down, we can dive into ActionCable. ActionCable is a WebSocket implementation that was integrated into Rails 5. ActionCable works by establishing a WebSocket connection with clients, and then clients subscribe to channels to receive content. My app requires 2 connections at the moment, one for new conversations and one for messages within a given conversation. We can fire up our generator by running `rails g channel message && rails g channel conversation` and delve into the structure from there.
 
 In my `app` folder I'll now find a `channels` folder as well as the traditional `models` and `controllers` folders. Much like controllers, channels inherit from a parent class called `ApplicationChannel`. Each of my new channels contains 2 new methods `subscribed` and `unsubscribed`. These manage what happens when a client (henceforth called a consumer) establishes a connection with the channel. I use these methods to manage what data to send to which users. For example, here's my `MessagesChannel` subscribe method:
 
