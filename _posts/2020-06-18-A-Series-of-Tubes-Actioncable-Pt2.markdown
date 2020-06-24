@@ -12,7 +12,7 @@ In this post we'll dive into implementing WebSocket connections in Rails. If you
 
 On of my favorite parts of Ruby on Rails is [generators](https://guides.rubyonrails.org/command_line.html#rails-generate). Generators will automatically create files and folders which conform to Rails convention in a single line of code. In fact, `rails new` is itself a generator which will create a functional, if empty, rails app from scratch. After you've run `rails new` and decided on a database schema, you're ready to start using generators. The syntax is pretty straightforward; here's an example from my recent capstone project [Emissary](https://github.com/strangrjrjr/emissary_api): 
 
-`rails g controller User username:string, email:string, password:string` 
+`rails g controller User username:string email:string password:string` 
 
 Generators are so powerful because they can be customized to only create the resources you need. Here I'm asking only for the controller (and by extension the model) for my User class. I'll be writing my frontend in React, so no need to clutter my file structure with views for the User. I know from planning my project that I expect to store a username, email, and password for my users and each will be a string. One line and I'm ready to go!
 
