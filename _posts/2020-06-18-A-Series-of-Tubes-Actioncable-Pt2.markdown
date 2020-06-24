@@ -56,7 +56,7 @@ end
 
 There's a lot going on here, but at its core this should look familiar to a Rails developer. This method takes a JWT as an argument, decrypts the payload, and performs the same authorization, database reads, and commits that `MessagesController` used to handle via HTTP. That payload includes all the parameters we need including: the sending user's id, the conversation id, and the message itself. We use ActionCable to broadcast the newly received message to all users subscribed to that specific conversation. Instant messaging achieved!
 
-This implementation works, but I want to optimize it further in the future by using another Rails component [ActiveJob](https://edgeguides.rubyonrails.org/active_job_basics.html). ActiveJob allow me to implement a queuing system for interacting with the database and allows me to prioritize and schedule actions in the background. I believe ActiveJob will help my application scale and handle increased traffic more gracefully.
+This implementation works, but I want to optimize it further in the future by using another Rails component [ActiveJob](https://edgeguides.rubyonrails.org/active_job_basics.html). ActiveJob allows me to implement a queuing system for interacting with the database and allows me to prioritize and schedule actions in the background. I believe ActiveJob will help my application scale and handle increased traffic more gracefully.
 
 ### Stay tuned!
 
