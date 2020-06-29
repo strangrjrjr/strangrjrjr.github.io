@@ -58,6 +58,34 @@ There's a lot going on here, but at its core this should look familiar to a Rail
 
 This implementation works, but I want to optimize it further in the future by using another Rails component [ActiveJob](https://edgeguides.rubyonrails.org/active_job_basics.html). ActiveJob allows me to implement a queuing system for interacting with the database and allows me to prioritize and schedule actions in the background. I believe ActiveJob will help my application scale and handle increased traffic more gracefully.
 
+### Final configuration settings
+
+Now that we've set up the basics for ActionCable, we need to do some final configuration. There are two files that we need to update: `/config/routes.rb` and `/config/initializers/cors.rb`. Routes open up URL paths that can be hit, while [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) governs which clients can make requests to our server. 
+
+`routes.rb`
+
+This one is relatively simple, we just need to add in a line to mount our ActionCable server at a given path like so:
+`mount ActionCable.server => '/cable'` Now we have a path available to establish a connection from our frontend.
+
+`cors.rb`
+
+**DISCLAIMER**: The following is meant for local development only, do not deploy your project with this CORS setup.
+The `cors.rb` file comes with a commented example that we need to slightly modify to get our development server open to our client.
+
+{% highlight ruby %}
+Rails.application.config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    origins '*'
+
+    resource '*',
+      headers: :any,
+      methods: [:get, :post, :put, :patch, :delete, :options, :head]
+  end
+end
+{% endhighlight %}
+
+Again, allowing any origin access to any resource is only suitable for development purposes. Once you finish building out your ActionCable project, be sure to restrict origins to your deployed client and resources available to be hit.
+
 ### Stay tuned!
 
 Hopefully you've enjoyed my intro to ActionCable. It's a fascinating feature of Rails, and I'm excited to see how else I can leverage WebSocket communication. My next post will delve into React and how to implement client-side WebSocket connections. :wave:
